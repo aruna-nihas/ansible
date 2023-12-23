@@ -1,0 +1,10 @@
+- name: create a user
+  hosts: localhost
+  tasks:
+   - name: check roboshop user exist or not
+     ansible.builtin.command: id roboshop 
+     register: user # here rigister=DATE in shell as DATE=$(date)
+     #ignore.errors: true
+   - name: print the output
+     ansible.builtin.debug:
+      msg: "{{user}}"
