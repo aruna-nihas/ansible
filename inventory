@@ -6,9 +6,10 @@ localhost
 
 
  [localhost:vars]
-    COURSE: "Devops with aws"
-    TRAINER: "Siva"
-    DURATION: "110HRS"
+    Course="Devops with aws"
+    Trainer="Siva"
+    Duration="110HRS"
+
 [web]
 192.187.56.3
 192.187.56.4
