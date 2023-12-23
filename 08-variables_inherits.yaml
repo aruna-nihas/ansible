@@ -1,0 +1,20 @@
+- name: variables in ansible
+  hosts: localhost
+  vars:
+    COURSE: Devops with aws
+    TRAINER: Siva
+    DURATION: 110HRS
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+     msg: "hello...i am learning {{COURSE}},trainer is {{TRAINER}} and the duration is {{DURATION}}"
+  - name: Print inherit variables
+    vars:
+      COURSE: Devops with aws
+      TRAINER: Siva
+      DURATION: 120HRS
+      DAYSPERWEEK: 5days
+      ansible.builtin.debug:
+       msg: "hello...i am learning {{COURSE}},trainer is {{TRAINER}} and the duration is {{DURATION}},{{DAYSPERWEEK}}"
+    
+ 
