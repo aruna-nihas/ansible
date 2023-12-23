@@ -1,5 +1,6 @@
 - name: Install and run nginx
   hosts: localhost
+  become: yes
   tasks:
   - name: installing nginx
     ansible.builtin.yum:
@@ -9,5 +10,5 @@
     ansible.builtin.service:
       name: nginx
       start: started
-      
+
     
