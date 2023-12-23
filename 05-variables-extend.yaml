@@ -1,9 +1,9 @@
 - name: variables in ansible
   hosts: localhost
   vars:
-    COURSE: "devops with aws"
-    TRAINER: "Siva"
-    DERATION: "110HRS"
+    COURSE: Devops with aws
+    TRAINER: Siva
+    DURATION: 110HRS
   tasks:
   - name: print variables
     ansible.builtin.debug:
