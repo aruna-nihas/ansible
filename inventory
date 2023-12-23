@@ -3,6 +3,12 @@
 localhost
 172.31.85.165
 
+
+
+ [localhost:vars]
+    COURSE: "Devops with aws"
+    TRAINER: "Siva"
+    DURATION: "110HRS"
 [web]
 192.187.56.3
 192.187.56.4
