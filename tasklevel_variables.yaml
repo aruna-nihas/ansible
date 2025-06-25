@@ -1,4 +1,4 @@
-- name: variables from play level
+- name: variables from task level
   hosts: localhost
   vars:
    course: "DevOps"
