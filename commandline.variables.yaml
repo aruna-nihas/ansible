@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
    - name: giving names through command line arguements
-     ansible.builtin.debug:
+  ansible.builtin.debug:
       msg" "Hi {{PERSON}}, {{WISHES}}"
