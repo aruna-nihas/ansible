@@ -5,6 +5,7 @@
    trainer: "Siva"
    duration: "110HRS"
   tasks:
+   vars:
     course: "DevOps with AWS"
     ansible.builtin.debug:
      msg: "Hi,i am learning {{course}} the trainer is {{trainer}} and the duration is {{duration}}"
