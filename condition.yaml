@@ -5,6 +5,7 @@
    - name: creating output
      ansible.builtin.command: roboshop
      register: aru
+     ignore_errors: true
    - name: checking output
      ansible.builtin.debug:
       msg: "output: {{aru}}"
